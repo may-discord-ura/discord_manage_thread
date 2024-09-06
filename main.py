@@ -23,6 +23,24 @@ intents.members = True
 bot = commands.Bot(intents=intents, command_prefix="$", max_messages=10000)
 tree = bot.tree
 
+# 設定ファイルのパス
+CONFIG_FILE = 'configs/config.json'
+CREATED_THREAD_LIST = 'configs/created_threads.json'
+
+
+### --------関数定義---------
+# 設定を読み込む
+def load_config(file):
+    with open(file, 'r') as f:
+        return json.load(f)
+
+# 設定を書き込む
+def save_config(config, file):
+    with open(file, 'w') as f:
+        json.dump(config, f, indent=4,ensure_ascii=False)
+
+
+
 ### -----on_ready------
 @bot.event
 async def on_ready():
@@ -48,6 +66,7 @@ async def on_ready():
 
     # ループ起動
     check_threads_2nd.start()
+
 
 ### スラッシュコマンド
 # スレ立て
