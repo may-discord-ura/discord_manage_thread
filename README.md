@@ -11,10 +11,8 @@
 - 作成したスレッドの自動ロック・削除
   - ロック5分前にアラートなど
 ### 動作イメージ
-![image](https://github.com/user-attachments/assets/4e5a9260-70e9-4902-8f18-997ffec4c69e)
-![image](https://github.com/user-attachments/assets/f9d79107-d09b-469e-ba22-110da0d586b1)
-
-
+![image](https://github.com/user-attachments/assets/c96adb31-3b76-46db-b3f7-00454b1d4492)
+![image](https://github.com/user-attachments/assets/b0a5cd44-d707-4642-9b9b-58eca47371eb)
 
 ## 導入準備
 ### discord側の準備
